@@ -1,0 +1,9 @@
+ru:
+  footer:
+    hexlet_title: '© Хекслет, %{year}'
+  navigation:
+    hexlet_logo: Хекслет
+    links:
+      posts: Посты
+      root: Домой
+  title: Супер блог Хекслет

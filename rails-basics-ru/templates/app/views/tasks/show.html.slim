@@ -1,0 +1,19 @@
+h1 = @task.name
+div
+- if @task.completed
+  p.completed
+    i Completed 
+- else
+  p.incompleted
+    i Incompleted
+p = "Assigned to: #{@task.performer || 'No assignee'}"
+p = "Created by: #{@task.creator}"
+span = "Status: #{@task.status}"
+hr
+p =  @task.description || 'This task has no description'
+br
+ul
+  li = link_to 'Edit task', edit_task_path(@task)
+  li = link_to 'Delete task', task_path(@task), method: :delete, data: { confirm: 'Are you sure?' }
+
+

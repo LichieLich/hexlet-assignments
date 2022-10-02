@@ -1,0 +1,33 @@
+---
+ru:
+  posts:
+    # BEGIN
+    create:
+      success: Пост создан.
+    destroy:
+      success: Пост удален.
+    edit:
+      title: Редактируем публикацию...
+    new:
+      title: Новый пост
+    show:
+      body: 'Текст статьи:'
+      comments: Комментарии
+    table:
+      title: Заголовок
+      count: Комментариев
+      links: Ссылки
+    title: Посты
+    update:
+      success: Пост обновлен.
+    # END
+
+    comments:
+      edit:
+        title: Изменить комментарий
+
+      create:
+        success: Комментарий создан.
+
+      update:
+        success: Комментарий обновлен.

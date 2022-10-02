@@ -1,0 +1,9 @@
+h1 = @post.title
+h4 = @post.summary
+p
+  i = @post.published
+br
+p = @post.body
+br
+p = link_to 'Edit post', edit_post_path
+p = link_to 'Delete post', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }

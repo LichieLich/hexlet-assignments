@@ -1,0 +1,32 @@
+ru:
+  activerecord:
+    models:
+      # BEGIN
+      comment:
+        zero: Нет комментариев
+        one: 1 комментарий
+        few: '2 комментария'
+        many: '%{count} комментариев'
+        other: '%{count} комментариев'
+      # END
+      post/comment: Комментарий
+
+    attributes:
+      post:
+        # BEGIN
+        body: Текст
+        title: Заголовок
+        # END
+      post/comment:
+        body: Содержание
+
+    errors:
+      models:
+        post:
+          attributes:
+            # BEGIN
+            body:
+              too_long: превышает 500 символов
+            title:
+              blank: наверняка не может быть пустым
+            # END

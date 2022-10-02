@@ -1,0 +1,15 @@
+<h1><%= @task.name %></h1>
+<div>
+  <p class = completed <%= 'hidden' unless @task.completed %>><i>Completed</i></p>
+  <p class = incompleted <%= 'hidden' if @task.completed %>><i>Incompleted</i></p>
+</div>
+<p><%= "Assigned to: #{@task.performer}" %></p>
+<p><%= "Created by: #{@task.creator}" %></p>
+<span><%= "Status: #{@task.status}" %></span>
+<hr>
+<p><%= @task.description %></p>
+<br>
+<ul>
+  <li><%= link_to 'Edit task', edit_task_path(@task) %></li>
+  <li><%= link_to 'Delete task', task_path(@task), method: :delete, data: { confirm: 'Are you sure?' } %></li>
+</ul>

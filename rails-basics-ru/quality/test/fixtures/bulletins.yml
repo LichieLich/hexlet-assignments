@@ -1,0 +1,11 @@
+bulletin_one:
+  id: 1
+  title: Title one
+  body: This is a bulletin
+  published: true
+
+bulletin_two:
+  id: 2
+  title: Title two
+  body: This is a bulletin number two
+  published: false

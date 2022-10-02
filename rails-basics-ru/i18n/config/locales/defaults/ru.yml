@@ -1,0 +1,13 @@
+ru:
+  back: Назад
+  destroy: Удалить
+  destroy_confirmation: Вы уверены?
+  edit: Редактировать
+  helpers:
+    submit:
+      post:
+        create: Создать Пост
+        update: Сохранить изменения
+  home_page: Домашняя страница
+  new_post: Новый пост
+  show: Открыть

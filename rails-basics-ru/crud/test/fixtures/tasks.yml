@@ -1,0 +1,8 @@
+task:
+  id: 1
+  name: Important task
+  description: This is a bulletin
+  completed: false
+  status: In progress
+  creator: Someone
+  performer: Me

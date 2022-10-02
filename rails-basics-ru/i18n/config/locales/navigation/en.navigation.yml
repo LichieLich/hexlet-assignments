@@ -1,0 +1,10 @@
+en:
+  footer:
+    hexlet_title: '© Hexlet, %{year}'
+  navigation:
+    hexlet_logo: Hexlet
+    links:
+      root: Home
+      posts: Posts
+  title: Hexlet superblog
+  
