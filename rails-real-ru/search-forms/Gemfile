@@ -32,7 +32,7 @@ gem 'slim-rails'
 
 gem 'aasm'
 # BEGIN
-gem 'ransack', :github => 'activerecord-hackery/ransack', :branch => 'main'
+gem 'ransack'
 # END
 
 group :development, :test do
