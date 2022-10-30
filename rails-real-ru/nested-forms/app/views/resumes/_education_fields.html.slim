@@ -1,0 +1,9 @@
+  .nested-fields
+    = f.input :institution
+    = f.input :faculty
+
+    .row
+      .col
+        = f.input :begin_date, as: :date, include_blank: true, start_year: 1970
+    .mb-3
+      = link_to_remove_association t('.remove_education'), f
