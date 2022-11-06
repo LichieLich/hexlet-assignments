@@ -1,0 +1,20 @@
+# frozen_string_literal: true
+
+class UserMailer < ApplicationMailer
+  # Subject can be set in your I18n file at config/locales/en.yml
+  # with the following lookup:
+  #
+  #   en.user_mailer.account_activation.subject
+  #
+  def account_activation
+    # BEGIN
+    def account_activation
+      @user = params[:user]
+      @user_name = @user.name
+      @confirmation_token = params[:confirmation_token]
+
+      mail(to: @user.email, subject: t('.subject'))
+    end
+    # END
+  end
+end
