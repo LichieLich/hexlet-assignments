@@ -22,7 +22,5 @@ class Repository < ApplicationRecord
       transitions from: :fetching, to: :failed
     end
   end
-  
-
   # END
 end

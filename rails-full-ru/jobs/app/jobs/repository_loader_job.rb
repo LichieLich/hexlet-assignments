@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 class RepositoryLoaderJob < ApplicationJob
   queue_as :default
 
   def perform(link)
-    repo_params = {}
-
-    repository = Repository.find_by(link: link) || Repository.new(link: link)
+    repository = Repository.find_by(link:) || Repository.new(link:)
     repository.start_fetching
 
     repo_name = link.gsub('https://github.com/', '')
@@ -19,7 +19,6 @@ class RepositoryLoaderJob < ApplicationJob
     repository.watchers_count = repo.watchers_count
     repository.language = repo.language
 
-    # binding.irb
     if repository.save
       repository.fetching_complete!
     else

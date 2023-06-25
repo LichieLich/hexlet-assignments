@@ -6,12 +6,13 @@ require 'rails/test_help'
 require 'webmock'
 
 # BEGIN
-include WebMock::API
-WebMock.enable!
+
 # END
 
 module ActiveSupport
   class TestCase
+    include WebMock::API
+    WebMock.enable!
     # Run tests in parallel with specified workers
     parallelize(workers: :number_of_processors)
 
